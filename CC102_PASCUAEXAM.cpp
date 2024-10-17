@@ -4,11 +4,14 @@ using namespace std;
 
 int main()
 {
-   string name;
-   float sugarPriceUSD = 0.00, ricePricePound = 0.00,  sardinesPricePound = 0.00,  coffeePriceUSD = 0.00, milkPriceUSD = 0.00;
+ 
    float sugarPriceUSD, ricePricePound, sardinesPricePound, coffeePriceUSD, milkPriceUSD; 
    float sugarQty, riceQty, sardinesQty, coffeeQty,  milkQty;
-   int total_cost
+   float usdtophp,poundtophp;
+   float total_cost, total_costtoPHP;
+   
+   cout << "SEVENPM Sari-Sari Store Point of Sale System" << endl;
+   cout << "************************************************************************************" <<endl;
    cout << "Enter the Quantity of Sugar: ";
    cin >> sugarPriceUSD; 
    cout << "Enter the Quantity of Rice: ";
@@ -31,6 +34,9 @@ int main()
    cout << "Enter Price of Milk: ";
    cin >> milkQty;
    cout << "************************************************************************************" <<endl;
+   float total_cost = (sugarPriceUSD) *(sugarQty)+ (ricePricePound)*(riceQty)+(sardinesPricePound)*(sardinesQty)+(coffeePriceUSD)*(coffeeQty)+(milkPriceUSD)*(milkQty);
+   
+   cout<< "Total_cost in PHP: " <<Total_cost <<endl;
    return 0;
    
 } 
